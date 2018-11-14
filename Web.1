@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+### ----------->>> Import libraries here
+import urllib
+
+
+### ----------->>> Initialize the scraper
+opener = urllib.FancyURLopener({})
+url = "http://scrape-me.runcode.ninja"
+
+### ----------->>> Define the URL and read from it
+data = opener.open(url)
+print data.read()
